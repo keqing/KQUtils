@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UIView+KQFrame.h"
+#import "NSString+KQCategory.h"
 @interface ViewController ()
 
 @end
@@ -22,6 +23,16 @@
     [label setSize:CGSizeMake(100, 100)];
     [label setBackgroundColor:[UIColor lightGrayColor]];
     [self.view addSubview:label ];
+    
+    
+    UIButton *btn = [self.view viewWithTag:10];
+    [btn setCorner:4];
+    [btn setBorderWithWidth:1 color:[UIColor redColor]];
+    
+    UIWebView *web = [self.view viewWithTag:11];
+    [web loadHTMLString:[NSString kq_formatHtmlWithContent:@"呵呵"] baseURL:nil
+     ];
+    
 }
 
 

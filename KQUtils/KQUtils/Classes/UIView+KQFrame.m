@@ -17,6 +17,7 @@
 
 // 因为 get 和 setter方法中  不是直接对 分类的属性操作，可以这样实现，如果是要直接对分类的属性进行赋值，要用到runtime，才能完成操作
 - (CGFloat)x{
+    
     return self.frame.origin.x;
 }
 
