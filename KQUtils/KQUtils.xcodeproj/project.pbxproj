@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1233DEFD1FC7AE1500EC5229 /* NSString+KQCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1233DEFC1FC7AE1500EC5229 /* NSString+KQCategory.m */; };
-		1233DF021FC7BCDE00EC5229 /* htmlFormatter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1233DF001FC7BCDE00EC5229 /* htmlFormatter.txt */; };
-		1233DF031FC7BCDE00EC5229 /* ImageFormatter.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1233DF011FC7BCDE00EC5229 /* ImageFormatter.txt */; };
 		1233DF061FC7CED000EC5229 /* KQHorizontalWaterfallCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1233DF051FC7CED000EC5229 /* KQHorizontalWaterfallCollectionViewLayout.m */; };
 		1233DF0B1FC81B3800EC5229 /* NSString+KQCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 1233DF0A1FC81B3800EC5229 /* NSString+KQCheck.m */; };
+		126146921FC940C100CA51B6 /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 126146911FC940C100CA51B6 /* Resource.bundle */; };
+		126146951FC941F500CA51B6 /* NSBundle+KQLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 126146941FC941F500CA51B6 /* NSBundle+KQLibrary.m */; };
 		6E17DE8E1FC64E8700DCB30B /* KQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E17DE8D1FC64E8700DCB30B /* KQTextView.m */; };
 		6E17DE911FC65F7400DCB30B /* UIColor+KQCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E17DE901FC65F7400DCB30B /* UIColor+KQCategory.m */; };
 		6EDCFDB01FC404D80088703D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDCFDAF1FC404D80088703D /* main.m */; };
@@ -29,12 +29,13 @@
 		1233DEFA1FC7AB8800EC5229 /* KQUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KQUtils.h; sourceTree = "<group>"; };
 		1233DEFB1FC7AE1500EC5229 /* NSString+KQCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+KQCategory.h"; sourceTree = "<group>"; };
 		1233DEFC1FC7AE1500EC5229 /* NSString+KQCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+KQCategory.m"; sourceTree = "<group>"; };
-		1233DF001FC7BCDE00EC5229 /* htmlFormatter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = htmlFormatter.txt; sourceTree = "<group>"; };
-		1233DF011FC7BCDE00EC5229 /* ImageFormatter.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ImageFormatter.txt; sourceTree = "<group>"; };
 		1233DF041FC7CED000EC5229 /* KQHorizontalWaterfallCollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KQHorizontalWaterfallCollectionViewLayout.h; sourceTree = "<group>"; };
 		1233DF051FC7CED000EC5229 /* KQHorizontalWaterfallCollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KQHorizontalWaterfallCollectionViewLayout.m; sourceTree = "<group>"; };
 		1233DF091FC81B3800EC5229 /* NSString+KQCheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+KQCheck.h"; sourceTree = "<group>"; };
 		1233DF0A1FC81B3800EC5229 /* NSString+KQCheck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+KQCheck.m"; sourceTree = "<group>"; };
+		126146911FC940C100CA51B6 /* Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resource.bundle; sourceTree = "<group>"; };
+		126146931FC941F500CA51B6 /* NSBundle+KQLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+KQLibrary.h"; sourceTree = "<group>"; };
+		126146941FC941F500CA51B6 /* NSBundle+KQLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+KQLibrary.m"; sourceTree = "<group>"; };
 		6E17DE8C1FC64E8700DCB30B /* KQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KQTextView.h; sourceTree = "<group>"; };
 		6E17DE8D1FC64E8700DCB30B /* KQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KQTextView.m; sourceTree = "<group>"; };
 		6E17DE8F1FC65F7400DCB30B /* UIColor+KQCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+KQCategory.h"; sourceTree = "<group>"; };
@@ -71,8 +72,7 @@
 		1233DEFE1FC7BC2100EC5229 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				1233DF001FC7BCDE00EC5229 /* htmlFormatter.txt */,
-				1233DF011FC7BCDE00EC5229 /* ImageFormatter.txt */,
+				126146911FC940C100CA51B6 /* Resource.bundle */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -150,6 +150,8 @@
 				1233DEFC1FC7AE1500EC5229 /* NSString+KQCategory.m */,
 				1233DF091FC81B3800EC5229 /* NSString+KQCheck.h */,
 				1233DF0A1FC81B3800EC5229 /* NSString+KQCheck.m */,
+				126146931FC941F500CA51B6 /* NSBundle+KQLibrary.h */,
+				126146941FC941F500CA51B6 /* NSBundle+KQLibrary.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -225,9 +227,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1233DF031FC7BCDE00EC5229 /* ImageFormatter.txt in Resources */,
-				1233DF021FC7BCDE00EC5229 /* htmlFormatter.txt in Resources */,
 				6EDCFDBE1FC404D80088703D /* LaunchScreen.storyboard in Resources */,
+				126146921FC940C100CA51B6 /* Resource.bundle in Resources */,
 				6EDCFDBB1FC404D80088703D /* Assets.xcassets in Resources */,
 				6EDCFDB91FC404D80088703D /* Main.storyboard in Resources */,
 			);
@@ -246,6 +247,7 @@
 				1233DF061FC7CED000EC5229 /* KQHorizontalWaterfallCollectionViewLayout.m in Sources */,
 				6EDCFDB31FC404D80088703D /* AppDelegate.m in Sources */,
 				6EDCFDC81FC419580088703D /* UIView+KQFrame.m in Sources */,
+				126146951FC941F500CA51B6 /* NSBundle+KQLibrary.m in Sources */,
 				6EDCFDB01FC404D80088703D /* main.m in Sources */,
 				6EFF716D1FC69D7000E68A8E /* UIImage+KQCategory.m in Sources */,
 				1233DF0B1FC81B3800EC5229 /* NSString+KQCheck.m in Sources */,

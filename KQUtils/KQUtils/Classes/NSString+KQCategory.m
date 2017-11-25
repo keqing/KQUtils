@@ -8,6 +8,7 @@
 
 #import "NSString+KQCategory.h"
 #import <CommonCrypto/CommonDigest.h>
+#import "NSBundle+KQLibrary.h"
 
 @implementation NSString (KQCategory)
 
@@ -30,7 +31,9 @@
 }
 
 + (NSString *)kq_formatHtmlWithImageURLStr:(NSString *)urlStr {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"ImageFormatter" ofType:@"txt"];
+    NSURL *bundlePath = [NSBundle resouceBundleURL:@"Resource" extension:@"bundle"];
+    NSBundle *resourceBundle = [NSBundle bundleWithURL:bundlePath];
+    NSString *filePath = [resourceBundle pathForResource:@"ImageFormatter" ofType:@"txt"];
     NSData *data = [NSData dataWithContentsOfFile:filePath];
     NSString *formatStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     formatStr = [formatStr stringByReplacingOccurrencesOfString:@"xxxxxxxxxxxxxxxxxx" withString:urlStr];
@@ -38,7 +41,9 @@
 }
 
 + (NSString *)kq_formatHtmlWithContent:(NSString *)content {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"htmlFormatter" ofType:@"txt"];
+    NSURL *bundlePath = [NSBundle resouceBundleURL:@"Resource" extension:@"bundle"];
+    NSBundle *resourceBundle = [NSBundle bundleWithURL:bundlePath];
+    NSString *filePath = [resourceBundle pathForResource:@"htmlFormatter" ofType:@"txt"];
     NSData *data = [NSData dataWithContentsOfFile:filePath];
     NSString *formatStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     formatStr = [formatStr stringByReplacingOccurrencesOfString:@"xxxxxxxxxxxxxxxxxx" withString:content];
