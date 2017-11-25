@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
   #
-
+  #s.source = { :git => '～/KQUtils/KQUtils/Classes' }
   s.source       = { :git => "https://github.com/keqing/KQUtils.git", :tag => s.version }
 
 
@@ -104,9 +104,11 @@ Pod::Spec.new do |s|
   #  You can preserve files from being cleaned, please don't preserve
   #  non-essential files like tests, examples and documentation.
   #
-
-  # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  s.resource_bundles = {
+        'Resource' => ['KQUtils/KQUtils/Classes/Resource/*'],
+   }
+  # s.resource  = "KQUtils/KQUtils/Classes/Resource/Resource.bundle"
+  # s.resources = { 'Resource' => ['KQUtils/KQUtils/Classes/**/*']}
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
